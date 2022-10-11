@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+// 在根组件中引入全局路由组件：
+import IndexRouter from "./router/indexRouter";
+// 在根组件中引入全局样式：
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+    return (
+        <IndexRouter/>
+    )
 }
 
-export default App;
+// 导出App组件：
+export default App
